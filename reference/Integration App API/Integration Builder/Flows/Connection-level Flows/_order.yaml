@@ -1,14 +1,7 @@
-- List flow instances for connection:
-    ref: connectionlevelflowscontroller_list
-- Get flow instance for connection:
-    ref: connectionlevelflowcontroller_get
-- Patch flow instance for connection:
-    ref: connectionlevelflowcontroller_patch
-- Update flow instance for connection:
-    ref: connectionlevelflowcontroller_put
-- Setup flow instance for connection:
-    ref: connectionlevelflowcontroller_setup
-- Reset flow instance for connection:
-    ref: connectionlevelflowcontroller_reset
-- Archive flow instance for connection:
-    ref: connectionlevelflowcontroller_archive
+- connectionlevelflowscontroller_list.md
+- connectionlevelflowcontroller_get.md
+- connectionlevelflowcontroller_patch.md
+- connectionlevelflowcontroller_put.md
+- connectionlevelflowcontroller_setup.md
+- connectionlevelflowcontroller_reset.md
+- connectionlevelflowcontroller_archive.md

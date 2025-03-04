@@ -1,16 +1,8 @@
-- List action instances:
-    ref: connectionlevelactionscontroller_list
-- Get action instance:
-    ref: connectionlevelactioncontroller_get
-- Patch update action instance:
-    ref: connectionlevelactioncontroller_patch
-- Create or Replace action instance:
-    ref: connectionlevelactioncontroller_put
-- Setup action instance:
-    ref: connectionlevelactioncontroller_setup
-- Run action instance:
-    ref: connectionlevelactioncontroller_run
-- Reset action instance:
-    ref: connectionlevelactioncontroller_reset
-- Archive action instance:
-    ref: connectionlevelactioncontroller_archive
+- connectionlevelactionscontroller_list.md
+- connectionlevelactioncontroller_get.md
+- connectionlevelactioncontroller_patch.md
+- connectionlevelactioncontroller_put.md
+- connectionlevelactioncontroller_setup.md
+- connectionlevelactioncontroller_run.md
+- connectionlevelactioncontroller_reset.md
+- connectionlevelactioncontroller_archive.md

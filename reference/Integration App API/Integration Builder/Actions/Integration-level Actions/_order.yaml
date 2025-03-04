@@ -1,16 +1,8 @@
-- List actions:
-    ref: integrationlevelactionscontroller_list
-- Create action:
-    ref: integrationlevelactionscontroller_create
-- Get action by id:
-    ref: integrationlevelactioncontroller_get
-- Export action:
-    ref: integrationlevelactioncontroller_export
-- Patch action:
-    ref: integrationlevelactioncontroller_patch
-- Put action:
-    ref: integrationlevelactioncontroller_put
-- Reset action:
-    ref: integrationlevelactioncontroller_reset
-- Archive action:
-    ref: integrationlevelactioncontroller_archive
+- integrationlevelactionscontroller_list.md
+- integrationlevelactionscontroller_create.md
+- integrationlevelactioncontroller_get.md
+- integrationlevelactioncontroller_export.md
+- integrationlevelactioncontroller_patch.md
+- integrationlevelactioncontroller_put.md
+- integrationlevelactioncontroller_reset.md
+- integrationlevelactioncontroller_archive.md

@@ -1,8 +1,8 @@
-- List connections
-- Create connection
-- Get connection
-- Get connection logs
-- Update connection
-- Test connection
-- Refresh connection credentials
-- Archive connection
+- connectionscontroller_listconnections.md
+- connectionscontroller_createconnection.md
+- connectionscontroller_getconnection.md
+- connectionscontroller_testconnection.md
+- connectionscontroller_refreshconnectioncredentials.md
+- connectionscontroller_archiveconnection.md
+- connectionscontroller_getlogs.md
+- connectionscontroller_patchconnection.md

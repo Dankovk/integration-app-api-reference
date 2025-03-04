@@ -1,9 +1,7 @@
-- List integrations
-- Create integration
-- Get integration by id
-- Patch integration
-- Update integration
-- Setup integration
-- Archive integration
-- IntegrationConnector
-- Global Webhooks
+- integrationscontroller_listintegrations.md
+- integrationscontroller_createintegration.md
+- integrationscontroller_patchintegration.md
+- integrationscontroller_setupintegration.md
+- integrationscontroller_archiveintegration.md
+- integrationscontroller_getintegration.md
+- integrationscontroller_putintegration.md

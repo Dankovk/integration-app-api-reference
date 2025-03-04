@@ -1,2 +1,2 @@
-- List external event log records
-- Get external event log record
+- externaleventlogrecordscontroller_listexternaleventlogrecords.md
+- externaleventlogrecordscontroller_getexternaleventlogrecord.md

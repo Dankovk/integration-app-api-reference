@@ -1,2 +1,2 @@
-- List app event logs
-- Get app event log
+- appeventscontroller_getappevent.md
+- appeventscontroller_listappevents.md

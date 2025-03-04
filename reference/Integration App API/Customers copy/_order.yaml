@@ -1,6 +1,6 @@
-- List customers
-- Create customer
-- Get customer
-- Patch customer
-- Update customer
-- Delete customer
+- customerscontroller_listcustomers.md
+- customerscontroller_createcustomer.md
+- customerscontroller_getcustomer.md
+- customerscontroller_patchcustomer.md
+- customerscontroller_deletecustomer.md
+- customerscontroller_putcustomer.md

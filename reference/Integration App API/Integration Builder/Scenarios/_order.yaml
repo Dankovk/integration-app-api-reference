@@ -1,14 +1,7 @@
-- List scenarios:
-    ref: scenarioscontroller_list
-- Create scenario:
-    ref: scenarioscontroller_create
-- Get scenario:
-    ref: scenariobyidcontroller_get
-- Patch scenario:
-    ref: scenariobyidcontroller_patch
-- Put scenario:
-    ref: scenariobyidcontroller_put
-- Export scenario:
-    ref: scenariobyidcontroller_export
-- Archive scenario:
-    ref: scenariobyidcontroller_archive
+- scenarioscontroller_list.md
+- scenarioscontroller_create.md
+- scenariobyidcontroller_get.md
+- scenariobyidcontroller_patch.md
+- scenariobyidcontroller_put.md
+- scenariobyidcontroller_export.md
+- scenariobyidcontroller_archive.md

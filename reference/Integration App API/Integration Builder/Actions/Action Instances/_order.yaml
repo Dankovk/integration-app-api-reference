@@ -1,8 +1,8 @@
-- List action instances
-- Get action instance
-- Patch update action instance
-- Replace action instance
-- Setup action instance
-- Reset action instance
-- Archive action instance
-- Run action instance
+- actioninstancescontroller_listactioninstances.md
+- actioninstancebyidcontroller_getactioninstance.md
+- actioninstancebyidcontroller_resetactioninstance.md
+- actioninstancebyidcontroller_runactioninstance.md
+- actioninstancebyidcontroller_deleteactioninstance.md
+- actioninstancebyidcontroller_patchactioninstance.md
+- actioninstancebyidcontroller_putactioninstance.md
+- actioninstancebyidcontroller_setup.md

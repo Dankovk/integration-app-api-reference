@@ -1,20 +1,10 @@
-- List actions:
-    ref: actionscontroller_listactions
-- Create action:
-    ref: actionscontroller_createaction
-- Get action by id:
-    ref: actionbyidcontroller_get
-- Export action:
-    ref: actionbyidcontroller_export
-- Patch action by id:
-    ref: actionbyidcontroller_patch
-- Update action by id:
-    ref: actionbyidcontroller_put
-- Clone action:
-    ref: actionbyidcontroller_clone
-- Apply action to integrations:
-    ref: actionbyidcontroller_apply
-- Reset action by id:
-    ref: actionbyidcontroller_reset
-- Delete action by id:
-    ref: actionbyidcontroller_archive
+- actionscontroller_listactions.md
+- actionscontroller_createaction.md
+- actionbyidcontroller_get.md
+- actionbyidcontroller_export.md
+- actionbyidcontroller_patch.md
+- actionbyidcontroller_put.md
+- actionbyidcontroller_clone.md
+- actionbyidcontroller_apply.md
+- actionbyidcontroller_reset.md
+- actionbyidcontroller_archive.md

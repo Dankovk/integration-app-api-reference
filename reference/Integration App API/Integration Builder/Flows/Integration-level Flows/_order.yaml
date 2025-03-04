@@ -1,14 +1,7 @@
-- List flows:
-    ref: integrationlevelflowscontroller_list
-- Create flow:
-    ref: integrationlevelflowscontroller_create
-- Get flow:
-    ref: integrationlevelflowcontroller_get
-- Patch update flow:
-    ref: integrationlevelflowcontroller_patch
-- Update flow:
-    ref: integrationlevelflowcontroller_put
-- Reset flow:
-    ref: integrationlevelflowcontroller_reset
-- Archive flow:
-    ref: integrationlevelflowcontroller_archive
+- integrationlevelflowscontroller_list.md
+- integrationlevelflowscontroller_create.md
+- integrationlevelflowcontroller_get.md
+- integrationlevelflowcontroller_patch.md
+- integrationlevelflowcontroller_put.md
+- integrationlevelflowcontroller_reset.md
+- integrationlevelflowcontroller_archive.md

@@ -1,8 +1,8 @@
-- List external event subscriptions
-- Get external event subscription
-- Setup external event subscription
-- Subscribe to external event subscription
-- Resubscribe to external event subscription
-- Triggers pull events for external event subscription
-- Unsubscribe from external event subscription
-- Delete external event subscription
+- externaleventsubscriptionscontroller_listexternaleventsubscriptions.md
+- externaleventsubscriptionscontroller_getexternaleventsubscription.md
+- externaleventsubscriptionscontroller_setupexternaleventsubscription.md
+- externaleventsubscriptionscontroller_resubscribetoexternaleventsubscription.md
+- externaleventsubscriptionscontroller_unsubscribefromexternaleventsubscription.md
+- externaleventsubscriptionscontroller_deleteexternaleventsubscription.md
+- externaleventsubscriptionscontroller_pullexternaleventsubscriptionevents.md
+- externaleventsubscriptionscontroller_subscribetoexternaleventsubscription.md

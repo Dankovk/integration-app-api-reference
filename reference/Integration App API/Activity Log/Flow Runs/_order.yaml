@@ -1,11 +1,4 @@
-- List flow runs:
-    ref: flowrunscontroller_listflowruns
-- Start flow run:
-    ref: runflowcontroller_runflow
-- Stop flow run:
-    ref: flowrunscontroller_stopflowrun
-- Get flow run:
-    ref: flowrunscontroller_getflowrun
-- Get flow run output:
-    ref: flowrunscontroller_getflowrunoutput
-- Node Runs
+- flowrunscontroller_listflowruns.md
+- runflowcontroller_runflow.md
+- flowrunscontroller_stopflowrun.md
+- flowrunscontroller_getflowrunoutputfornode.md
