@@ -1,4 +1,0 @@
-- List external event log records:
-    ref: externaleventlogrecordscontroller_listexternaleventlogrecords
-- Get external event log record:
-    ref: externaleventlogrecordscontroller_getexternaleventlogrecord

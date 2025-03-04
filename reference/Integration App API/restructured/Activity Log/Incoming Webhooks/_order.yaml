@@ -1,6 +1,0 @@
-- List incoming webhooks:
-    ref: incomingwebhooksreadercontroller_listincomingwebhooks
-- Get incoming webhook:
-    ref: incomingwebhooksreadercontroller_getincomingwebhook
-- Get incoming webhook details:
-    ref: incomingwebhooksreadercontroller_getincomingwebhookdetails

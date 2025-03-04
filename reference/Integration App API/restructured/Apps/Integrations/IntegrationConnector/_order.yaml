@@ -1,4 +1,0 @@
-- Get connector parameters:
-    ref: integrationscontroller_getintegrationparameters
-- Upload connector:
-    ref: integrationscontroller_uploadconnector
