@@ -1,0 +1,14 @@
+- List flow instances for connection:
+    ref: connectionlevelflowscontroller_list
+- Get flow instance for connection:
+    ref: connectionlevelflowcontroller_get
+- Patch flow instance for connection:
+    ref: connectionlevelflowcontroller_patch
+- Update flow instance for connection:
+    ref: connectionlevelflowcontroller_put
+- Setup flow instance for connection:
+    ref: connectionlevelflowcontroller_setup
+- Reset flow instance for connection:
+    ref: connectionlevelflowcontroller_reset
+- Archive flow instance for connection:
+    ref: connectionlevelflowcontroller_archive
