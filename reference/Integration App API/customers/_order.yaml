@@ -1,0 +1,6 @@
+- customerscontroller_listcustomers
+- customerscontroller_createcustomer
+- customerscontroller_getcustomer
+- customerscontroller_putcustomer
+- customerscontroller_patchcustomer
+- customerscontroller_deletecustomer

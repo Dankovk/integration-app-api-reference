@@ -1,0 +1,17 @@
+- flows
+- integrations
+- customers
+- webhooks
+- externalapilogs
+- connections
+- data-sources
+- data-links
+- field-mappings
+- app-data-schemas
+- app-events
+- external-events
+- actions
+- actioninstancebyid
+- files
+- incomingwebhooksreader
+- scenarios

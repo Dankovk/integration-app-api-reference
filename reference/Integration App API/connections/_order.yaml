@@ -1,0 +1,13 @@
+- connectionscontroller_listconnections
+- connectionscontroller_createconnection
+- connectionscontroller_getconnection
+- connectionscontroller_patchconnection
+- connectionscontroller_archiveconnection
+- connectionscontroller_listoperations
+- connectionscontroller_getoperation
+- connectionscontroller_runoperation
+- connectionscontroller_listdatalocations
+- connectionscontroller_getdatalocationspec
+- connectionscontroller_testconnection
+- connectionscontroller_refreshconnectioncredentials
+- connectionscontroller_getlogs

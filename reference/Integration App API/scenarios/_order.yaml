@@ -1,0 +1,7 @@
+- scenarioscontroller_list
+- scenarioscontroller_create
+- scenariobyidcontroller_get
+- scenariobyidcontroller_put
+- scenariobyidcontroller_patch
+- scenariobyidcontroller_archive
+- scenariobyidcontroller_export
