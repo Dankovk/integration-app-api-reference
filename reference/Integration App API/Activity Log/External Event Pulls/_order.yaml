@@ -1,6 +1,3 @@
-- List external event pulls:
-    ref: externaleventpullscontroller_list
-- Get external event pull:
-    ref: externaleventpullscontroller_getbyid
-- Get external event pull logs:
-    ref: externaleventpullscontroller_getlogs
+- List external event pulls
+- Get external event pull
+- Get external event pull logs

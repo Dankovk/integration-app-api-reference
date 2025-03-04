@@ -1,6 +1,3 @@
-- List external API logs:
-    ref: externalapilogscontroller_listlogs
-- Get external API log:
-    ref: externalapilogscontroller_getlog
-- Get external API log details:
-    ref: externalapilogscontroller_getlogcontent
+- List external API logs
+- Get external API log
+- Get external API log details

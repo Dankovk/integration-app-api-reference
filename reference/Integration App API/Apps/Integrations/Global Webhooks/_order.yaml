@@ -1,2 +1,1 @@
-- List integration global webhooks:
-    ref: integrationscontroller_getintegrationglobalwebhooks
+- List integration global webhooks

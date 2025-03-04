@@ -1,16 +1,8 @@
-- List connections:
-    ref: connectionscontroller_listconnections
-- Create connection:
-    ref: connectionscontroller_createconnection
-- Get connection:
-    ref: connectionscontroller_getconnection
-- Get connection logs:
-    ref: connectionscontroller_getlogs
-- Update connection:
-    ref: connectionscontroller_patchconnection
-- Test connection:
-    ref: connectionscontroller_testconnection
-- Refresh connection credentials:
-    ref: connectionscontroller_refreshconnectioncredentials
-- Archive connection:
-    ref: connectionscontroller_archiveconnection
+- List connections
+- Create connection
+- Get connection
+- Get connection logs
+- Update connection
+- Test connection
+- Refresh connection credentials
+- Archive connection

@@ -1,4 +1,2 @@
-- List app event logs:
-    ref: appeventscontroller_listappevents
-- Get app event log:
-    ref: appeventscontroller_getappevent
+- List app event logs
+- Get app event log
