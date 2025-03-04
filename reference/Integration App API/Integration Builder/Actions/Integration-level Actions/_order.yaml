@@ -1,0 +1,16 @@
+- List actions:
+    ref: integrationlevelactionscontroller_list
+- Create action:
+    ref: integrationlevelactionscontroller_create
+- Get action by id:
+    ref: integrationlevelactioncontroller_get
+- Export action:
+    ref: integrationlevelactioncontroller_export
+- Patch action:
+    ref: integrationlevelactioncontroller_patch
+- Put action:
+    ref: integrationlevelactioncontroller_put
+- Reset action:
+    ref: integrationlevelactioncontroller_reset
+- Archive action:
+    ref: integrationlevelactioncontroller_archive

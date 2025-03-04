@@ -1,0 +1,16 @@
+- List action instances:
+    ref: actioninstancescontroller_listactioninstances
+- Get action instance:
+    ref: actioninstancebyidcontroller_getactioninstance
+- Patch update action instance:
+    ref: actioninstancebyidcontroller_patchactioninstance
+- Replace action instance:
+    ref: actioninstancebyidcontroller_putactioninstance
+- Setup action instance:
+    ref: actioninstancebyidcontroller_setup
+- Reset action instance:
+    ref: actioninstancebyidcontroller_resetactioninstance
+- Archive action instance:
+    ref: actioninstancebyidcontroller_deleteactioninstance
+- Run action instance:
+    ref: actioninstancebyidcontroller_runactioninstance

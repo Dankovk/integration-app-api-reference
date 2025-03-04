@@ -1,0 +1,16 @@
+- List external event subscriptions:
+    ref: externaleventsubscriptionscontroller_listexternaleventsubscriptions
+- Get external event subscription:
+    ref: externaleventsubscriptionscontroller_getexternaleventsubscription
+- Setup external event subscription:
+    ref: externaleventsubscriptionscontroller_setupexternaleventsubscription
+- Subscribe to external event subscription:
+    ref: externaleventsubscriptionscontroller_subscribetoexternaleventsubscription
+- Resubscribe to external event subscription:
+    ref: externaleventsubscriptionscontroller_resubscribetoexternaleventsubscription
+- Triggers pull events for external event subscription:
+    ref: externaleventsubscriptionscontroller_pullexternaleventsubscriptionevents
+- Unsubscribe from external event subscription:
+    ref: externaleventsubscriptionscontroller_unsubscribefromexternaleventsubscription
+- Delete external event subscription:
+    ref: externaleventsubscriptionscontroller_deleteexternaleventsubscription
