@@ -1,17 +1,565 @@
-- flows
-- integrations
-- customers
-- webhooks
-- externalapilogs
-- connections
-- data-sources
-- data-links
-- field-mappings
-- app-data-schemas
-- app-events
-- external-events
-- actions
-- actioninstancebyid
-- files
-- incomingwebhooksreader
-- scenarios
+- overview
+- Apps:
+    - Integrations:
+        - List integrations:
+            ref: integrationscontroller_listintegrations
+        - Create integration:
+            ref: integrationscontroller_createintegration
+        - Get integration by id:
+            ref: integrationscontroller_getintegration
+        - Patch integration:
+            ref: integrationscontroller_patchintegration
+        - Update integration:
+            ref: integrationscontroller_putintegration
+        - Setup integration:
+            ref: integrationscontroller_setupintegration
+        - Archive integration:
+            ref: integrationscontroller_archiveintegration
+        - IntegrationConnector:
+            - Get connector parameters:
+                ref: integrationscontroller_getintegrationparameters
+            - Upload connector:
+                ref: integrationscontroller_uploadconnector
+        - Global Webhooks:
+            - List integration global webhooks:
+                ref: integrationscontroller_getintegrationglobalwebhooks
+    - Connections:
+        - List connections:
+            ref: connectionscontroller_listconnections
+        - Create connection:
+            ref: connectionscontroller_createconnection
+        - Get connection:
+            ref: connectionscontroller_getconnection
+        - Get connection logs:
+            ref: connectionscontroller_getlogs
+        - Update connection:
+            ref: connectionscontroller_patchconnection
+        - Test connection:
+            ref: connectionscontroller_testconnection
+        - Refresh connection credentials:
+            ref: connectionscontroller_refreshconnectioncredentials
+        - Archive connection:
+            ref: connectionscontroller_archiveconnection
+- Integration Builder:
+    - Scenarios:
+        - List scenarios:
+            ref: scenarioscontroller_list
+        - Create scenario:
+            ref: scenarioscontroller_create
+        - Get scenario:
+            ref: scenariobyidcontroller_get
+        - Patch scenario:
+            ref: scenariobyidcontroller_patch
+        - Put scenario:
+            ref: scenariobyidcontroller_put
+        - Export scenario:
+            ref: scenariobyidcontroller_export
+        - Archive scenario:
+            ref: scenariobyidcontroller_archive
+    - Actions:
+        - Universal Actions:
+            - List actions:
+                ref: actionscontroller_listactions
+            - Create action:
+                ref: actionscontroller_createaction
+            - Get action by id:
+                ref: actionbyidcontroller_get
+            - Export action:
+                ref: actionbyidcontroller_export
+            - Patch action by id:
+                ref: actionbyidcontroller_patch
+            - Update action by id:
+                ref: actionbyidcontroller_put
+            - Clone action:
+                ref: actionbyidcontroller_clone
+            - Apply action to integrations:
+                ref: actionbyidcontroller_apply
+            - Reset action by id:
+                ref: actionbyidcontroller_reset
+            - Delete action by id:
+                ref: actionbyidcontroller_archive
+        - Integration-level Actions:
+            - List actions:
+                ref: integrationlevelactionscontroller_list
+            - Create action:
+                ref: integrationlevelactionscontroller_create
+            - Get action by id:
+                ref: integrationlevelactioncontroller_get
+            - Export action:
+                ref: integrationlevelactioncontroller_export
+            - Patch action:
+                ref: integrationlevelactioncontroller_patch
+            - Put action:
+                ref: integrationlevelactioncontroller_put
+            - Reset action:
+                ref: integrationlevelactioncontroller_reset
+            - Archive action:
+                ref: integrationlevelactioncontroller_archive
+        - Connection-level Actions:
+            - List action instances:
+                ref: connectionlevelactionscontroller_list
+            - Get action instance:
+                ref: connectionlevelactioncontroller_get
+            - Patch update action instance:
+                ref: connectionlevelactioncontroller_patch
+            - Create or Replace action instance:
+                ref: connectionlevelactioncontroller_put
+            - Setup action instance:
+                ref: connectionlevelactioncontroller_setup
+            - Run action instance:
+                ref: connectionlevelactioncontroller_run
+            - Reset action instance:
+                ref: connectionlevelactioncontroller_reset
+            - Archive action instance:
+                ref: connectionlevelactioncontroller_archive
+        - Action Instances:
+            - List action instances:
+                ref: actioninstancescontroller_listactioninstances
+            - Get action instance:
+                ref: actioninstancebyidcontroller_getactioninstance
+            - Patch update action instance:
+                ref: actioninstancebyidcontroller_patchactioninstance
+            - Replace action instance:
+                ref: actioninstancebyidcontroller_putactioninstance
+            - Setup action instance:
+                ref: actioninstancebyidcontroller_setup
+            - Reset action instance:
+                ref: actioninstancebyidcontroller_resetactioninstance
+            - Archive action instance:
+                ref: actioninstancebyidcontroller_deleteactioninstance
+            - Run action instance:
+                ref: actioninstancebyidcontroller_runactioninstance
+    - External Events:
+        - External Event Subscriptions:
+            - List external event subscriptions:
+                ref: externaleventsubscriptionscontroller_listexternaleventsubscriptions
+            - Get external event subscription:
+                ref: externaleventsubscriptionscontroller_getexternaleventsubscription
+            - Setup external event subscription:
+                ref: externaleventsubscriptionscontroller_setupexternaleventsubscription
+            - Subscribe to external event subscription:
+                ref: externaleventsubscriptionscontroller_subscribetoexternaleventsubscription
+            - Resubscribe to external event subscription:
+                ref: externaleventsubscriptionscontroller_resubscribetoexternaleventsubscription
+            - Triggers pull events for external event subscription:
+                ref: externaleventsubscriptionscontroller_pullexternaleventsubscriptionevents
+            - Unsubscribe from external event subscription:
+                ref: externaleventsubscriptionscontroller_unsubscribefromexternaleventsubscription
+            - Delete external event subscription:
+                ref: externaleventsubscriptionscontroller_deleteexternaleventsubscription
+    - Flows:
+        - Universal Flows:
+            - List flows:
+                ref: flowscontroller_listflows
+            - Create flow:
+                ref: flowscontroller_createflow
+            - Get flow by id:
+                ref: flowbyidcontroller_get
+            - Export flow:
+                ref: flowbyidcontroller_export
+            - Patch flow by id:
+                ref: flowbyidcontroller_patch
+            - Update flow by id:
+                ref: flowbyidcontroller_put
+            - Clone flow:
+                ref: flowbyidcontroller_clone
+            - Apply flow to integrations:
+                ref: flowbyidcontroller_apply
+            - Reset flow by id:
+                ref: flowbyidcontroller_reset
+            - Archive flow by id:
+                ref: flowbyidcontroller_archive
+        - Integration-level Flows:
+            - List flows:
+                ref: integrationlevelflowscontroller_list
+            - Create flow:
+                ref: integrationlevelflowscontroller_create
+            - Get flow:
+                ref: integrationlevelflowcontroller_get
+            - Patch update flow:
+                ref: integrationlevelflowcontroller_patch
+            - Update flow:
+                ref: integrationlevelflowcontroller_put
+            - Reset flow:
+                ref: integrationlevelflowcontroller_reset
+            - Archive flow:
+                ref: integrationlevelflowcontroller_archive
+        - Connection-level Flows:
+            - List flow instances for connection:
+                ref: connectionlevelflowscontroller_list
+            - Get flow instance for connection:
+                ref: connectionlevelflowcontroller_get
+            - Patch flow instance for connection:
+                ref: connectionlevelflowcontroller_patch
+            - Update flow instance for connection:
+                ref: connectionlevelflowcontroller_put
+            - Setup flow instance for connection:
+                ref: connectionlevelflowcontroller_setup
+            - Reset flow instance for connection:
+                ref: connectionlevelflowcontroller_reset
+            - Archive flow instance for connection:
+                ref: connectionlevelflowcontroller_archive
+        - Flow Instances:
+            - List flow instances:
+                ref: flowinstancescontroller_listflowinstances
+            - Create flow instance:
+                ref: flowinstancescontroller_createflow
+            - Get flow instance by ID:
+                ref: flowinstancebyidcontroller_getflowinstance
+            - Create flow instance by selector:
+                ref: flowinstancebyidcontroller_createflowinstance
+            - Patch flow instance:
+                ref: flowinstancebyidcontroller_patchflowinstance
+            - Put flow instance:
+                ref: flowinstancebyidcontroller_updateflowinstance
+            - Setup flow instance:
+                ref: flowinstancebyidcontroller_setupflowinstance
+            - Reset flow instance:
+                ref: flowinstancebyidcontroller_resetflowinstance
+            - Export flow instance:
+                ref: flowinstancebyidcontroller_export
+            - Archive flow instance:
+                ref: flowinstancebyidcontroller_archiveflowinstance
+    - Field Mappings:
+        - Universal Field Mappings:
+            - List field mappings:
+                ref: fieldmappingscontroller_list
+            - Create field mapping:
+                ref: fieldmappingscontroller_create
+            - Get field mapping:
+                ref: fieldmappingbyidcontroller_get
+            - Get field mapping app schema:
+                ref: fieldmappingbyidcontroller_getappschema
+            - Export field mapping:
+                ref: fieldmappingbyidcontroller_export
+            - Patch field mapping:
+                ref: fieldmappingbyidcontroller_patch
+            - Put field mapping:
+                ref: fieldmappingbyidcontroller_put
+            - Clone field mapping:
+                ref: fieldmappingbyidcontroller_clone
+            - Apply field mapping to integrations:
+                ref: fieldmappingbyidcontroller_apply
+            - Reset field mapping:
+                ref: fieldmappingbyidcontroller_reset
+            - Archive field mapping:
+                ref: fieldmappingbyidcontroller_archive
+        - Integration-level Field Mappings:
+            - List field mappings:
+                ref: integrationlevelfieldmappingscontroller_list
+            - Create field mapping:
+                ref: integrationlevelfieldmappingscontroller_create
+            - Get field mapping:
+                ref: integrationlevelfieldmappingcontroller_get
+            - Get field mapping app schema:
+                ref: integrationlevelfieldmappingcontroller_getappschema
+            - Patch update field mapping:
+                ref: integrationlevelfieldmappingcontroller_patch
+            - Update field mapping:
+                ref: integrationlevelfieldmappingcontroller_put
+            - Reset field mapping:
+                ref: integrationlevelfieldmappingcontroller_reset
+            - Archive field mapping:
+                ref: integrationlevelfieldmappingcontroller_archive
+        - Connection-level Field Mappings:
+            - List field mapping instances:
+                ref: connectionlevelfieldmappingscontroller_list
+            - Create field mapping instance:
+                ref: connectionlevelfieldmappingcontroller_create
+            - Get field mapping instance:
+                ref: connectionlevelfieldmappingcontroller_get
+            - Patch update field mapping instance:
+                ref: connectionlevelfieldmappingcontroller_patch
+            - Update field mapping instance:
+                ref: connectionlevelfieldmappingcontroller_put
+            - Setup field mapping instance:
+                ref: connectionlevelfieldmappingcontroller_setup
+            - Reset field mapping instance:
+                ref: connectionlevelfieldmappingcontroller_reset
+            - Archive field mapping instance:
+                ref: connectionlevelfieldmappingcontroller_archive
+        - Field Mapping Instances:
+            - List field mapping instances:
+                ref: fieldmappinginstancescontroller_listfieldmappinginstances
+            - Get field mapping instance:
+                ref: fieldmappinginstancebyidcontroller_getfieldmappinginstance
+            - Create field mapping instaance by selector:
+                ref: fieldmappinginstancebyidcontroller_postfieldmappinginstance
+            - Patch update field mapping instance:
+                ref: fieldmappinginstancebyidcontroller_patchfieldmappinginstance
+            - Put field mapping instance:
+                ref: fieldmappinginstancebyidcontroller_putfieldmappinginstance
+            - Setup field mapping instance:
+                ref: fieldmappinginstancebyidcontroller_setup
+            - Reset field mapping instance:
+                ref: fieldmappinginstancebyidcontroller_resetfieldmappinginstance
+            - Archive field mapping instance:
+                ref: fieldmappinginstancebyidcontroller_deletefieldmappinginstance
+    - Data Sources:
+        - Universal Data Sources:
+            - List data sources:
+                ref: datasourcescontroller_list
+            - Create data source:
+                ref: datasourcescontroller_create
+            - Get data source:
+                ref: datasourcebyidcontroller_get
+            - Export data source:
+                ref: datasourcebyidcontroller_export
+            - Patch data source:
+                ref: datasourcebyidcontroller_patch
+            - Update data source:
+                ref: datasourcebyidcontroller_put
+            - Clone data source:
+                ref: datasourcebyidcontroller_clone
+            - Apply data source to integrations:
+                ref: datasourcebyidcontroller_apply
+            - Reset data source:
+                ref: datasourcebyidcontroller_reset
+            - Archive data source:
+                ref: datasourcebyidcontroller_archive
+        - Integration-level Data Sources:
+            - List data sources:
+                ref: integrationleveldatasourcescontroller_list
+            - Create data source:
+                ref: integrationleveldatasourcescontroller_create
+            - Get data source:
+                ref: integrationleveldatasourcecontroller_get
+            - Patch update data source:
+                ref: integrationleveldatasourcecontroller_patch
+            - Update data source:
+                ref: integrationleveldatasourcecontroller_put
+            - Reset data source:
+                ref: integrationleveldatasourcecontroller_reset
+            - Archive data source:
+                ref: integrationleveldatasourcecontroller_archive
+        - Connection-level Data Sources:
+            - List data source instances:
+                ref: connectionleveldatasourcescontroller_get
+            - Create data source instance:
+                ref: connectionleveldatasourcecontroller_create
+            - Get data source instance:
+                ref: connectionleveldatasourcecontroller_get
+            - Patch update data source instance:
+                ref: connectionleveldatasourcecontroller_patch
+            - Update data source instance:
+                ref: connectionleveldatasourcecontroller_put
+            - Setup data source instance:
+                ref: connectionleveldatasourcecontroller_setup
+            - Reset data source instance:
+                ref: connectionleveldatasourcecontroller_reset
+            - Archive data source instance:
+                ref: connectionleveldatasourcecontroller_archive
+        - Data Source Instances:
+            - List data source instances:
+                ref: datasourceinstancescontroller_list
+            - Get data source instance:
+                ref: datasourceinstancebyidcontroller_get
+            - Patch update data source instance:
+                ref: datasourceinstancebyidcontroller_patch
+            - Update data source instance:
+                ref: datasourceinstancebyidcontroller_put
+            - Setup data source instance:
+                ref: datasourceinstancebyidcontroller_setup
+            - Reset data source instance:
+                ref: datasourceinstancebyidcontroller_reset
+            - Archive data source instance:
+                ref: datasourceinstancebyidcontroller_archive
+    - Data Links:
+        - Data Link Tables:
+            - List data links:
+                ref: datalinkscontroller_listdatalinks
+            - Delete data link:
+                ref: datalinkscontroller_deletedatalinkdto
+            - List data link tables:
+                ref: datalinktablescontroller_listdatalinktables
+            - Create data link table:
+                ref: datalinktablescontroller_createdatalinktable
+            - Get data link table:
+                ref: datalinktablescontroller_getdatalinktable
+            - Patch data link table:
+                ref: datalinktablescontroller_patchdatalinktable
+            - Update data link table:
+                ref: datalinktablescontroller_putdatalinktable
+            - Archive data link table:
+                ref: datalinktablescontroller_deletedatalinktable
+        - Data Link Table Instances:
+            - List data link table instances:
+                ref: datalinktableinstancescontroller_listdatalinktableinstances
+            - Create data link table instance:
+                ref: datalinktableinstancecontroller_postdatalinktableinstance
+            - Get data link table instance:
+                ref: datalinktableinstancecontroller_getdatalinktableinstance
+            - Path data link table instance:
+                ref: datalinktableinstancecontroller_patchdatalinktableinstance
+            - Update data link table instance:
+                ref: datalinktableinstancecontroller_putdatalinktableinstance
+            - Archive data link table instance:
+                ref: datalinktableinstancecontroller_archivedatalinktableinstance
+        - Data Link Records:
+            - Get data link records:
+                ref: datalinktableinstancecontroller_getdatalinktableinstancelinks
+            - Create data link record:
+                ref: datalinktableinstancecontroller_createdatalinktableinstancelinks
+            - Delete data link record:
+                ref: datalinktableinstancecontroller_deletedatalinktableinstancelinks
+    - App Data Schemas:
+        - App Data Schemas:
+            - List app data schemas:
+                ref: appdataschemascontroller_listappdataschemas
+            - Create app data schema:
+                ref: appdataschemascontroller_createappdataschema
+            - Get app data schema:
+                ref: appdataschemabyidcontroller_getappdataschema
+            - Export app data schema:
+                ref: appdataschemabyidcontroller_export
+            - Patch app data schema:
+                ref: appdataschemabyidcontroller_patchappdataschema
+            - Update app data schema:
+                ref: appdataschemabyidcontroller_putappdataschema
+            - Archive app data schema:
+                ref: appdataschemabyidcontroller_archiveappdataschema
+        - App Data Schema Instances:
+            - List app data schema instances:
+                ref: appdataschemainstancescontroller_listappdataschemainstances
+            - Create app data schema instance:
+                ref: appdataschemainstancecontroller_createappdataschemainstance
+            - Get app data schema instance:
+                ref: appdataschemainstancecontroller_getappdataschemainstance
+            - Patch app data schema instance:
+                ref: appdataschemainstancecontroller_patchappdataschemainstance
+            - Update app data schema instance:
+                ref: appdataschemainstancecontroller_putappdataschemainstance
+            - Setup app data schema instance:
+                ref: appdataschemainstancecontroller_setupappdataschemainstance
+            - Archive app data schema instance:
+                ref: appdataschemainstancecontroller_archiveappdataschemainstance
+    - App Events:
+        - App Event Types:
+            - List app event types:
+                ref: appeventtypescontroller_listappeventtypes
+            - Create app event type:
+                ref: appeventtypescontroller_createappeventtype
+            - Get app event type:
+                ref: appeventtypescontroller_getappeventtype
+            - Get app event type schema:
+                ref: appeventtypescontroller_getappeventtypeschema
+            - Export App Event Type to JSON:
+                ref: appeventtypescontroller_exportappeventtype
+            - Patch app event type:
+                ref: appeventtypescontroller_patchappeventtype
+            - Update app event type:
+                ref: appeventtypescontroller_putappeventtype
+            - Archive app event type:
+                ref: appeventtypescontroller_deleteappeventtype
+        - App Event Subscriptions:
+            - List app event subscriptions:
+                ref: appeventsubscriptionscontroller_listappeventsubscriptions
+            - Create app event subscription:
+                ref: appeventsubscriptioncontroller_createappeventsubscription
+            - Get app event subscription:
+                ref: appeventsubscriptioncontroller_getappeventsubscription
+            - Get app event subscription schema:
+                ref: appeventsubscriptioncontroller_getappeventsubscriptionschema
+            - Patch app event subscription:
+                ref: appeventsubscriptioncontroller_patchappeventsubscription
+            - Update app event subscription:
+                ref: appeventsubscriptioncontroller_updateappeventsubscription
+            - Subscribe to app event subscription:
+                ref: appeventsubscriptioncontroller_subscribetoappeventsubscription
+            - Archive app event subscription:
+                ref: appeventsubscriptioncontroller_archiveappeventsubscription
+    - API Operations:
+        - Integration-level API Operations:
+            - List integration operations:
+                ref: integrationscontroller_getintegrationoperations
+            - Get integration operation:
+                ref: integrationscontroller_getintegrationoperationbykey
+        - Connection-level API Operations:
+            - List connection operations:
+                ref: connectionscontroller_listoperations
+            - Get connection operation:
+                ref: connectionscontroller_getoperation
+            - Run connection operation:
+                ref: connectionscontroller_runoperation
+    - Data Collections:
+        - Integration-level Data Collections:
+            - List integration data collections:
+                ref: integrationscontroller_getintegrationdatalocations
+            - Get integration data collection:
+                ref: integrationscontroller_getintegrationdatalocationbykey
+        - Connection-level Data Collections:
+            - List connection-level data collection:
+                ref: connectionscontroller_listdatalocations
+            - Get connection-level data collection:
+                ref: connectionscontroller_getdatalocationspec
+    - Proxy API: proxy-api
+    - Files:
+        - Upload file:
+            ref: filescontroller_upload
+- Customers:
+    - List customers:
+        ref: customerscontroller_listcustomers
+    - Create customer:
+        ref: customerscontroller_createcustomer
+    - Get customer:
+        ref: customerscontroller_getcustomer
+    - Patch customer:
+        ref: customerscontroller_patchcustomer
+    - Update customer:
+        ref: customerscontroller_putcustomer
+    - Delete customer:
+        ref: customerscontroller_deletecustomer
+- Activity Log:
+    - Flow Runs:
+        - List flow runs:
+            ref: flowrunscontroller_listflowruns
+        - Start flow run:
+            ref: runflowcontroller_runflow
+        - Stop flow run:
+            ref: flowrunscontroller_stopflowrun
+        - Get flow run:
+            ref: flowrunscontroller_getflowrun
+        - Get flow run output:
+            ref: flowrunscontroller_getflowrunoutput
+        - Node Runs:
+            - Get node run:
+                ref: flowrunscontroller_getflownoderun
+            - Get node runs:
+                ref: flowrunscontroller_listflownoderuns
+            - Get node run output:
+                ref: flowrunscontroller_getnoderunoutput
+            - Get node run outputs:
+                ref: flowrunscontroller_listnoderunoutputs
+            - Get flow run output for specific node:
+                ref: flowrunscontroller_getflowrunoutputfornode
+    - External Event Logs:
+        - List external event log records:
+            ref: externaleventlogrecordscontroller_listexternaleventlogrecords
+        - Get external event log record:
+            ref: externaleventlogrecordscontroller_getexternaleventlogrecord
+    - App Event Logs:
+        - List app event logs:
+            ref: appeventscontroller_listappevents
+        - Get app event log:
+            ref: appeventscontroller_getappevent
+    - External Event Pulls:
+        - List external event pulls:
+            ref: externaleventpullscontroller_list
+        - Get external event pull:
+            ref: externaleventpullscontroller_getbyid
+        - Get external event pull logs:
+            ref: externaleventpullscontroller_getlogs
+    - Incoming Webhooks:
+        - List incoming webhooks:
+            ref: incomingwebhooksreadercontroller_listincomingwebhooks
+        - Get incoming webhook:
+            ref: incomingwebhooksreadercontroller_getincomingwebhook
+        - Get incoming webhook details:
+            ref: incomingwebhooksreadercontroller_getincomingwebhookdetails
+    - External API Logs:
+        - List external API logs:
+            ref: externalapilogscontroller_listlogs
+        - Get external API log:
+            ref: externalapilogscontroller_getlog
+        - Get external API log details:
+            ref: externalapilogscontroller_getlogcontent
