@@ -1,6 +1,8 @@
-# .DS_Store
-# Thumbs.db
+.DS_Store
+Thumbs.db
 node_modules
-*.ts
 bun.lockb
 bun.lock
+*.ts
+*.md
+
